@@ -5,8 +5,7 @@ public class Main {
 	public static void main(String[] args) {
 		ejercicio1();
 		ejercicio2();
-		
-
+		ejercicio3();
 	}
 public static void ejercicio1() {
 	Persona per1 = new Persona("Carla","Campos", 0);
@@ -30,5 +29,14 @@ public static void ejercicio2() {
 	
 	System.out.println(pro1.mostrar());
 	System.out.println(pro2.mostrar());
+}
+public static void ejercicio3() {
+	CuentaBancaria cuenta = new CuentaBancaria("Carolina.Lopez",1000,305);
+	
+	cuenta.depositar(200);
+	cuenta.retirar(300, 305);
+	cuenta.retirar(400, 204);
+	
+	System.out.println(cuenta.mostrar());
 }
 }
